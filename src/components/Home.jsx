@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="h-[600px] bg-summer-200 py-3">
+    <div className="h-fit bg-summer-200 py-3">
       <div className="container flex h-full w-full flex-wrap justify-center md:mx-auto">
         <div className="flex items-center px-5 text-center md:w-1/2 md:px-0 md:text-left">
           <div>
@@ -16,14 +16,9 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="hidden items-center justify-end md:flex md:w-1/3">
-          <div className="flex h-5/6 w-96 items-center justify-center bg-summer-200">
-            <div className="h-full w-full">
-              <img
-                src="assets/fatur_2.png"
-                className="h-full w-full object-cover"
-              ></img>
-            </div>
+        <div className="hidden items-center justify-center md:flex md:w-auto">
+          <div className="flex h-full w-96 items-center justify-center bg-summer-200">
+            <img src="assets/me.gif" className="h-full object-cover"></img>
           </div>
         </div>
       </div>
