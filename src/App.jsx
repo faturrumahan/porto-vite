@@ -8,14 +8,15 @@ import UpdateProject from "./pages/dashboard/UpdateProject";
 
 const router = createBrowserRouter([
   { path: "/", element: <LandingPage /> },
-  {
-    path: "/admin-dashboard",
-    children: [
-      { path: "/admin-dashboard", element: <Dashboard /> },
-      { path: "/admin-dashboard/add", element: <AddProject /> },
-      { path: "/admin-dashboard/:idProject", element: <UpdateProject /> },
-    ],
-  },
+  { path: "/admin-dashboard", element: <Dashboard /> },
+  // {
+  //   path: "/admin-dashboard",
+  //   children: [
+  //     { path: "/admin-dashboard/", element: <Dashboard /> },
+  //     { path: "/admin-dashboard/add", element: <AddProject /> },
+  //     { path: "/admin-dashboard/:idProject", element: <UpdateProject /> },
+  //   ],
+  // },
 ]);
 
 function App() {
