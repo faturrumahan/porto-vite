@@ -20,7 +20,7 @@ const Home = () => {
           <div className="flex h-5/6 w-96 items-center justify-center bg-summer-200">
             <div className="h-full w-full">
               <img
-                src="https://placehold.co/600?text=My+Photo"
+                src="assets/fatur_2.png"
                 className="h-full w-full object-cover"
               ></img>
             </div>
