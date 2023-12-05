@@ -80,8 +80,7 @@ const UpdateProject = () => {
           for (let i = 0; i < updateProject.images.length; i++) {
             formData.append("images", updateProject.images[i]);
           }
-        }
-        if (key === "tag") {
+        } else if (key === "tag") {
           for (let i = 0; i < updateProject.tag.length; i++) {
             if (!tagList) {
               tagList = updateProject.tag[i].value;
