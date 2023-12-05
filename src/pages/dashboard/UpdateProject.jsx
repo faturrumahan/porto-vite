@@ -91,7 +91,7 @@ const UpdateProject = () => {
           }
           formData.append("tag", tagList);
         } else {
-          formData.append(key, value);
+          formData.append(key, value.replace(/['"]/g, "\\$&"));
         }
       }
       console.log(formData.toString());

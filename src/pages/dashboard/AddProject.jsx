@@ -49,7 +49,7 @@ const AddProject = () => {
           }
           formData.append("tag", tagList);
         } else {
-          formData.append(key, value);
+          formData.append(key, value.replace(/['"]/g, "\\$&"));
         }
       }
       const response = await fetch(`${url[2]}/project`, {
