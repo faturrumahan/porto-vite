@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from 'swiper/modules';
 import "swiper/css";
+import 'swiper/css/pagination';
 import ReactModal from "react-modal";
 import { url } from "../URL";
 
@@ -93,6 +95,8 @@ const Services = () => {
             <Swiper
               slidesPerView={4}
               spaceBetween={5}
+              pagination={true}
+              modules={[Pagination]}
               className="z-0 mx-5 py-10 lg:mx-0"
               breakpoints={{
                 0: {
